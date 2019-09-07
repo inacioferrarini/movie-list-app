@@ -13,6 +13,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
 
     public func start() {
+        setupTabBar()
         loadModules()
     }
 
@@ -25,7 +26,13 @@ class MainCoordinator: NSObject, Coordinator {
         for module in modules {
             module.coordinator.start()
         }
+    }
 
+    internal func setupTabBar() {
+        UITabBar.appearance().barTintColor = Assets.Colors.TabBar.background
+        UITabBar.appearance().tintColor = Assets.Colors.TabBar.icon
+        UITabBar.appearance().unselectedItemTintColor = Assets.Colors.TabBar.selectedIcon
+        // change unselected text color to light gray
     }
 
 }

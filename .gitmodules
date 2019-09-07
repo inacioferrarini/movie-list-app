@@ -1,9 +1,6 @@
 [submodule "MovieList/Modules/Common"]
 	path = MovieList/Modules/Common
 	url = git@github.com:inacioferrarini/PROCESSO_SELETIVO__iOS__CONCRETE_SOLUTIONS__Movie_List__2019__Common.git
-[submodule "MovieList/Modules/MovieList"]
-	path = MovieList/Modules/MovieList
-	url = git@github.com:inacioferrarini/PROCESSO_SELETIVO__iOS__CONCRETE_SOLUTIONS__Movie_List__2019__MovieList.git
 [submodule "MovieList/Modules/Favorites"]
 	path = MovieList/Modules/Favorites
 	url = git@github.com:inacioferrarini/PROCESSO_SELETIVO__iOS__CONCRETE_SOLUTIONS__Movie_List__2019__Favorites.git

@@ -4,3 +4,6 @@
 [submodule "MovieList/Modules/Favorites"]
 	path = MovieList/Modules/Favorites
 	url = git@github.com:inacioferrarini/PROCESSO_SELETIVO__iOS__CONCRETE_SOLUTIONS__Movie_List__2019__Favorites.git
+[submodule "MovieList/Modules/MovieCatalog"]
+	path = MovieList/Modules/MovieCatalog
+	url = git@github.com:inacioferrarini/PROCESSO_SELETIVO__iOS__CONCRETE_SOLUTIONS__MOVIE_CATALOG__2019.git

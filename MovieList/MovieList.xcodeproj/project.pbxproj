@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB6191AA23240908007E4C48 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6191A923240908007E4C48 /* MainCoordinator.swift */; };
+		BB6191DC23240F02007E4C48 /* MovieCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6191D923240EF8007E4C48 /* MovieCatalog.framework */; };
 		BBE77CAC2323F93C00A0C872 /* Favorites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; };
 		BBE77CB42323FD8E00A0C872 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2152323F57800552AF2 /* Common.framework */; };
 		BBF0A1DE2323F48600552AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A1DD2323F48600552AF2 /* AppDelegate.swift */; };
@@ -20,6 +21,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB6191D823240EF8007E4C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB6191B823240D81007E4C48;
+			remoteInfo = MovieCatalog;
+		};
+		BB6191DA23240EF8007E4C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB6191C123240D81007E4C48;
+			remoteInfo = MovieCatalogTests;
+		};
+		BB6191DD23240F09007E4C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6191B723240D81007E4C48;
+			remoteInfo = MovieCatalog;
+		};
 		BBE77CB22323F94B00A0C872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */;
@@ -80,6 +102,7 @@
 
 /* Begin PBXFileReference section */
 		BB6191A923240908007E4C48 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieCatalog.xcodeproj; path = MovieCatalog/MovieCatalog.xcodeproj; sourceTree = "<group>"; };
 		BBF0A1DA2323F48600552AF2 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF0A1DD2323F48600552AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF0A1E22323F48600552AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6191DC23240F02007E4C48 /* MovieCatalog.framework in Frameworks */,
 				BBE77CB42323FD8E00A0C872 /* Common.framework in Frameworks */,
 				BBE77CAC2323F93C00A0C872 /* Favorites.framework in Frameworks */,
 			);
@@ -168,6 +192,15 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		BB6191D423240EF8007E4C48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB6191D923240EF8007E4C48 /* MovieCatalog.framework */,
+				BB6191DB23240EF8007E4C48 /* MovieCatalogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BBF0A1D12323F48600552AF2 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF0A20F2323F57800552AF2 /* Common.xcodeproj */,
+				BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */,
 				BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */,
 			);
 			path = Modules;
@@ -267,6 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB6191DE23240F09007E4C48 /* PBXTargetDependency */,
 				BBE77CB62323FD9A00A0C872 /* PBXTargetDependency */,
 				BBE77CB32323F94B00A0C872 /* PBXTargetDependency */,
 			);
@@ -354,6 +389,10 @@
 					ProductGroup = BBF0A2222323F58A00552AF2 /* Products */;
 					ProjectRef = BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */;
 				},
+				{
+					ProductGroup = BB6191D423240EF8007E4C48 /* Products */;
+					ProjectRef = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -365,6 +404,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BB6191D923240EF8007E4C48 /* MovieCatalog.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MovieCatalog.framework;
+			remoteRef = BB6191D823240EF8007E4C48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB6191DB23240EF8007E4C48 /* MovieCatalogTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MovieCatalogTests.xctest;
+			remoteRef = BB6191DA23240EF8007E4C48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BBF0A2152323F57800552AF2 /* Common.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -472,6 +525,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BB6191DE23240F09007E4C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MovieCatalog;
+			targetProxy = BB6191DD23240F09007E4C48 /* PBXContainerItemProxy */;
+		};
 		BBE77CB32323F94B00A0C872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Favorites;

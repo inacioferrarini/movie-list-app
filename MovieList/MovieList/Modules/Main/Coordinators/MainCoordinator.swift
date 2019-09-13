@@ -29,10 +29,14 @@ class MainCoordinator: NSObject, Coordinator {
     }
 
     internal func setupTabBar() {
-        UITabBar.appearance().barTintColor = Assets.Colors.TabBar.background
-        UITabBar.appearance().tintColor = Assets.Colors.TabBar.icon
-        UITabBar.appearance().unselectedItemTintColor = Assets.Colors.TabBar.selectedIcon
-        // change unselected text color to light gray
+        UITabBar.appearance().barTintColor = Assets.Colors.TabBar.backgroundColor
+
+        if let unselectedTextColor = Assets.Colors.TabBar.unselectedTextColor {
+            UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: unselectedTextColor], for: .normal)
+        }
+        if let selectedTextColor = Assets.Colors.TabBar.selectedTextColor {
+            UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: selectedTextColor], for: .selected)
+        }
     }
 
 }

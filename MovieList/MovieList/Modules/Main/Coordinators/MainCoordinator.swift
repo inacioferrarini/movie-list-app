@@ -14,6 +14,7 @@ class MainCoordinator: NSObject, Coordinator {
 
     public func start() {
         setupTabBar()
+        setupNavigationBar()
         loadModules()
     }
 
@@ -36,6 +37,14 @@ class MainCoordinator: NSObject, Coordinator {
         }
         if let selectedTextColor = Assets.Colors.TabBar.selectedTextColor {
             UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: selectedTextColor], for: .selected)
+        }
+    }
+
+    internal func setupNavigationBar() {
+        UINavigationBar.appearance().barTintColor = Assets.Colors.NavigationBar.backgroundColor
+        UINavigationBar.appearance().tintColor = Assets.Colors.NavigationBar.iconColor
+        if let titleColor = Assets.Colors.NavigationBar.titleColor {
+            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: titleColor]
         }
     }
 

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4A5B91232C371F00550391 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2152323F57800552AF2 /* Common.framework */; };
+		BB4A5B92232C371F00550391 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2152323F57800552AF2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB4A5B95232C371F00550391 /* MovieCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6191D923240EF8007E4C48 /* MovieCatalog.framework */; };
+		BB4A5B96232C371F00550391 /* MovieCatalog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB6191D923240EF8007E4C48 /* MovieCatalog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB4A5B99232C371F00550391 /* Favorites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; };
+		BB4A5B9A232C371F00550391 /* Favorites.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB6191AA23240908007E4C48 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6191A923240908007E4C48 /* MainCoordinator.swift */; };
-		BB6191DC23240F02007E4C48 /* MovieCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6191D923240EF8007E4C48 /* MovieCatalog.framework */; };
-		BBE77CAC2323F93C00A0C872 /* Favorites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; };
-		BBE77CB42323FD8E00A0C872 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2152323F57800552AF2 /* Common.framework */; };
 		BBF0A1DE2323F48600552AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A1DD2323F48600552AF2 /* AppDelegate.swift */; };
 		BBF0A1E32323F48600552AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF0A1E12323F48600552AF2 /* Main.storyboard */; };
 		BBF0A1E62323F48600552AF2 /* MovieList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A1E42323F48600552AF2 /* MovieList.xcdatamodeld */; };
@@ -21,6 +24,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB4A5B93232C371F00550391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF0A20F2323F57800552AF2 /* Common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD3264E2323D8D9006E7DBC;
+			remoteInfo = Common;
+		};
+		BB4A5B97232C371F00550391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6191B723240D81007E4C48;
+			remoteInfo = MovieCatalog;
+		};
+		BB4A5B9B232C371F00550391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF0A1B52323F0BC00552AF2;
+			remoteInfo = Favorites;
+		};
 		BB6191D823240EF8007E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
@@ -100,6 +124,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BB4A5B9D232C371F00550391 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB4A5B92232C371F00550391 /* Common.framework in Embed Frameworks */,
+				BB4A5B9A232C371F00550391 /* Favorites.framework in Embed Frameworks */,
+				BB4A5B96232C371F00550391 /* MovieCatalog.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BB6191A923240908007E4C48 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieCatalog.xcodeproj; path = MovieCatalog/MovieCatalog.xcodeproj; sourceTree = "<group>"; };
@@ -125,9 +165,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB6191DC23240F02007E4C48 /* MovieCatalog.framework in Frameworks */,
-				BBE77CB42323FD8E00A0C872 /* Common.framework in Frameworks */,
-				BBE77CAC2323F93C00A0C872 /* Favorites.framework in Frameworks */,
+				BB4A5B91232C371F00550391 /* Common.framework in Frameworks */,
+				BB4A5B95232C371F00550391 /* MovieCatalog.framework in Frameworks */,
+				BB4A5B99232C371F00550391 /* Favorites.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +337,7 @@
 				BBF0A1D72323F48600552AF2 /* Frameworks */,
 				BBF0A1D82323F48600552AF2 /* Resources */,
 				BBF0A23D2323F67400552AF2 /* ShellScript */,
+				BB4A5B9D232C371F00550391 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +345,9 @@
 				BB6191DE23240F09007E4C48 /* PBXTargetDependency */,
 				BBE77CB62323FD9A00A0C872 /* PBXTargetDependency */,
 				BBE77CB32323F94B00A0C872 /* PBXTargetDependency */,
+				BB4A5B94232C371F00550391 /* PBXTargetDependency */,
+				BB4A5B98232C371F00550391 /* PBXTargetDependency */,
+				BB4A5B9C232C371F00550391 /* PBXTargetDependency */,
 			);
 			name = MovieList;
 			productName = MovieList;
@@ -525,6 +569,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BB4A5B94232C371F00550391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Common;
+			targetProxy = BB4A5B93232C371F00550391 /* PBXContainerItemProxy */;
+		};
+		BB4A5B98232C371F00550391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MovieCatalog;
+			targetProxy = BB4A5B97232C371F00550391 /* PBXContainerItemProxy */;
+		};
+		BB4A5B9C232C371F00550391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Favorites;
+			targetProxy = BB4A5B9B232C371F00550391 /* PBXContainerItemProxy */;
+		};
 		BB6191DE23240F09007E4C48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MovieCatalog;
@@ -691,6 +750,7 @@
 		BBF0A2062323F48600552AF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;
@@ -709,6 +769,7 @@
 		BBF0A2072323F48600552AF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;

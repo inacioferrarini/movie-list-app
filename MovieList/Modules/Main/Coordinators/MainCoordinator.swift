@@ -8,6 +8,14 @@ class MainCoordinator: NSObject, Coordinator {
     var childCoordinators = [Coordinator]()
     var tabBarController: UITabBarController
 
+    lazy var modules: [Module] = {
+        let modules: [Module] = [
+            MovieCatalogModule(tabBar: tabBarController),
+            FavoritesModule(tabBar: tabBarController)
+        ]
+        return modules
+    }()
+    
     public init(tabBarController: UITabBarController) {
         self.tabBarController = tabBarController
     }
@@ -19,11 +27,6 @@ class MainCoordinator: NSObject, Coordinator {
     }
 
     internal func loadModules() {
-        let modules: [Module] = [
-            MovieCatalogModule(tabBar: tabBarController),
-            FavoritesModule(tabBar: tabBarController)
-        ]
-
         for module in modules {
             module.coordinator.start()
         }

@@ -7,11 +7,12 @@ class MainCoordinator: NSObject, Coordinator {
 
     var childCoordinators = [Coordinator]()
     var tabBarController: UITabBarController
+    var appContext = AppContext()
 
     lazy var modules: [Module] = {
         let modules: [Module] = [
-            MovieCatalogModule(tabBar: tabBarController),
-            FavoritesModule(tabBar: tabBarController)
+            MovieCatalogModule(tabBar: tabBarController, appContext: appContext),
+            FavoritesModule(tabBar: tabBarController, appContext: appContext)
         ]
         return modules
     }()

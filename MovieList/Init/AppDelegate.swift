@@ -20,12 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
 
+        // //////////////////////// REMOVE
+        let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
+        print("Documents: \(url)")
+        // //////////////////////// REMOVE
+        
         return true
     }
 
-//    func applicationWillTerminate(_ application: UIApplication) {
-//        self.saveContext()
-//    }
+    func applicationWillTerminate(_ application: UIApplication) {
+        coordinator?.finish()
+    }
 
     // MARK: - Core Data stack
 

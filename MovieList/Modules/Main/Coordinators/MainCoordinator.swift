@@ -26,6 +26,12 @@ class MainCoordinator: NSObject, Coordinator {
         setupNavigationBar()
         loadModules()
     }
+    
+    public func finish() {
+        for module in modules {
+            module.coordinator.finish()
+        }
+    }
 
     internal func loadModules() {
         for module in modules {

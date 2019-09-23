@@ -14,6 +14,8 @@
 		BB4A5B99232C371F00550391 /* Favorites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; };
 		BB4A5B9A232C371F00550391 /* Favorites.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB4A5B9F232C3D6500550391 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4A5B9E232C3D6500550391 /* Launch Screen.storyboard */; };
+		BB51F512233979140054EB57 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB51F50E233979140054EB57 /* SVProgressHUD.framework */; };
+		BB51F513233979140054EB57 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB51F50E233979140054EB57 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB6191AA23240908007E4C48 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6191A923240908007E4C48 /* MainCoordinator.swift */; };
 		BBF0A1DE2323F48600552AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A1DD2323F48600552AF2 /* AppDelegate.swift */; };
 		BBF0A1E32323F48600552AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF0A1E12323F48600552AF2 /* Main.storyboard */; };
@@ -133,6 +135,7 @@
 			files = (
 				BB4A5B92232C371F00550391 /* Common.framework in Embed Frameworks */,
 				BB4A5B9A232C371F00550391 /* Favorites.framework in Embed Frameworks */,
+				BB51F513233979140054EB57 /* SVProgressHUD.framework in Embed Frameworks */,
 				BB4A5B96232C371F00550391 /* MovieCatalog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -142,6 +145,7 @@
 
 /* Begin PBXFileReference section */
 		BB4A5B9E232C3D6500550391 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BB51F50E233979140054EB57 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		BB6191A923240908007E4C48 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieCatalog.xcodeproj; path = MovieCatalog/MovieCatalog.xcodeproj; sourceTree = "<group>"; };
 		BBF0A1DA2323F48600552AF2 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +171,7 @@
 			files = (
 				BB4A5B91232C371F00550391 /* Common.framework in Frameworks */,
 				BB4A5B95232C371F00550391 /* MovieCatalog.framework in Frameworks */,
+				BB51F512233979140054EB57 /* SVProgressHUD.framework in Frameworks */,
 				BB4A5B99232C371F00550391 /* Favorites.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +327,7 @@
 		BBF0A2302323F5B100552AF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB51F50E233979140054EB57 /* SVProgressHUD.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 				"pt-BR",
 				"en-US",
@@ -749,6 +756,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MovieList/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -768,6 +779,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MovieList/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

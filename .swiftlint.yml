@@ -1,5 +1,4 @@
 disabled_rules: # rule identifiers to exclude from running
-  - trailing_whitespace
   - cyclomatic_complexity
   - function_body_length
   - identifier_name
@@ -7,6 +6,8 @@ disabled_rules: # rule identifiers to exclude from running
   - type_name
   - large_tuple
   - todo
+  - nesting
+  - vertical_whitespace
 
 opt_in_rules: # some rules are only opt-in
   - control_statement
@@ -14,12 +15,15 @@ opt_in_rules: # some rules are only opt-in
   - trailing_newline
   - colon
   - comma
+  - trailing_whitespace
 
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
   - Feature
   - Carthage
   - Modules
+  - MovieListTests
+  - MovieListUITests
   - MovieList/Modules
   
 

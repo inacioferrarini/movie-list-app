@@ -68,6 +68,48 @@
 			remoteGlobalIDString = BB6191B723240D81007E4C48;
 			remoteInfo = MovieCatalog;
 		};
+		BB699735233B039F00EBA6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB69972D233B039F00EBA6B3 /* Ness.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBD509172337E2E4009CA4EE;
+			remoteInfo = Ness;
+		};
+		BB699737233B039F00EBA6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB69972D233B039F00EBA6B3 /* Ness.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBD509202337E2E5009CA4EE;
+			remoteInfo = NessTests;
+		};
+		BB69973E233B03B200EBA6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB699739233B03B200EBA6B3 /* Flow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBD509172337E2E4009CA4EE;
+			remoteInfo = Flow;
+		};
+		BB699740233B03B200EBA6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB699739233B03B200EBA6B3 /* Flow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBD509202337E2E5009CA4EE;
+			remoteInfo = FlowTests;
+		};
+		BB699777233B097100EBA6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB69972D233B039F00EBA6B3 /* Ness.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD509162337E2E4009CA4EE;
+			remoteInfo = Ness;
+		};
+		BB699779233B097100EBA6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB699739233B03B200EBA6B3 /* Flow.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD509162337E2E4009CA4EE;
+			remoteInfo = Flow;
+		};
 		BBE77CB22323F94B00A0C872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */;
@@ -148,6 +190,8 @@
 		BB51F50E233979140054EB57 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		BB6191A923240908007E4C48 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieCatalog.xcodeproj; path = MovieCatalog/MovieCatalog.xcodeproj; sourceTree = "<group>"; };
+		BB69972D233B039F00EBA6B3 /* Ness.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Ness.xcodeproj; path = Ness/Ness.xcodeproj; sourceTree = "<group>"; };
+		BB699739233B03B200EBA6B3 /* Flow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Flow.xcodeproj; path = Flow/Flow.xcodeproj; sourceTree = "<group>"; };
 		BBF0A1DA2323F48600552AF2 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF0A1DD2323F48600552AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF0A1E22323F48600552AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -246,6 +290,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BB69972E233B039F00EBA6B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB699736233B039F00EBA6B3 /* Ness.framework */,
+				BB699738233B039F00EBA6B3 /* NessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB69973A233B03B200EBA6B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB69973F233B03B200EBA6B3 /* Flow.framework */,
+				BB699741233B03B200EBA6B3 /* FlowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BBF0A1D12323F48600552AF2 = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +364,8 @@
 				BBF0A20F2323F57800552AF2 /* Common.xcodeproj */,
 				BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */,
 				BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */,
+				BB69972D233B039F00EBA6B3 /* Ness.xcodeproj */,
+				BB699739233B03B200EBA6B3 /* Flow.xcodeproj */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -348,6 +412,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB699778233B097100EBA6B3 /* PBXTargetDependency */,
+				BB69977A233B097100EBA6B3 /* PBXTargetDependency */,
 				BB6191DE23240F09007E4C48 /* PBXTargetDependency */,
 				BBE77CB62323FD9A00A0C872 /* PBXTargetDependency */,
 				BBE77CB32323F94B00A0C872 /* PBXTargetDependency */,
@@ -442,8 +508,16 @@
 					ProjectRef = BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */;
 				},
 				{
+					ProductGroup = BB69973A233B03B200EBA6B3 /* Products */;
+					ProjectRef = BB699739233B03B200EBA6B3 /* Flow.xcodeproj */;
+				},
+				{
 					ProductGroup = BB6191D423240EF8007E4C48 /* Products */;
 					ProjectRef = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
+				},
+				{
+					ProductGroup = BB69972E233B039F00EBA6B3 /* Products */;
+					ProjectRef = BB69972D233B039F00EBA6B3 /* Ness.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -468,6 +542,34 @@
 			fileType = wrapper.cfbundle;
 			path = MovieCatalogTests.xctest;
 			remoteRef = BB6191DA23240EF8007E4C48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB699736233B039F00EBA6B3 /* Ness.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Ness.framework;
+			remoteRef = BB699735233B039F00EBA6B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB699738233B039F00EBA6B3 /* NessTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NessTests.xctest;
+			remoteRef = BB699737233B039F00EBA6B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB69973F233B03B200EBA6B3 /* Flow.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Flow.framework;
+			remoteRef = BB69973E233B03B200EBA6B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB699741233B03B200EBA6B3 /* FlowTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FlowTests.xctest;
+			remoteRef = BB699740233B03B200EBA6B3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		BBF0A2152323F57800552AF2 /* Common.framework */ = {
@@ -596,6 +698,16 @@
 			isa = PBXTargetDependency;
 			name = MovieCatalog;
 			targetProxy = BB6191DD23240F09007E4C48 /* PBXContainerItemProxy */;
+		};
+		BB699778233B097100EBA6B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Ness;
+			targetProxy = BB699777233B097100EBA6B3 /* PBXContainerItemProxy */;
+		};
+		BB69977A233B097100EBA6B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flow;
+			targetProxy = BB699779233B097100EBA6B3 /* PBXContainerItemProxy */;
 		};
 		BBE77CB32323F94B00A0C872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

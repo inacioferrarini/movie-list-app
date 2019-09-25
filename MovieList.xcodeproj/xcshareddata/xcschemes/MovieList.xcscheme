@@ -88,6 +88,26 @@
                ReferencedContainer = "container:Modules/MovieCatalog/MovieCatalog.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BBD5091F2337E2E5009CA4EE"
+               BuildableName = "FlowTests.xctest"
+               BlueprintName = "FlowTests"
+               ReferencedContainer = "container:Modules/Flow/Flow.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BBD5091F2337E2E5009CA4EE"
+               BuildableName = "NessTests.xctest"
+               BlueprintName = "NessTests"
+               ReferencedContainer = "container:Modules/Ness/Ness.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

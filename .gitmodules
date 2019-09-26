@@ -10,3 +10,6 @@
 [submodule "Modules/Common"]
 	path = Modules/Common
 	url = git@github.com:inacioferrarini/prova-concrete-movies-2019-common.git
+[submodule "Modules/Flow"]
+	path = Modules/Flow
+	url = git@github.com:inacioferrarini/iOSFlowFramework.git

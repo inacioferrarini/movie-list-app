@@ -7,6 +7,3 @@
 [submodule "Modules/Ness"]
 	path = Modules/Ness
 	url = git@github.com:inacioferrarini/iOSNessFramework.git
-[submodule "Modules/Flow"]
-	path = Modules/Flow
-	url = git@github.com:inacioferrarini/iOSFlowFramework.git

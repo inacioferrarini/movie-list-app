@@ -1,9 +1,0 @@
-[submodule "Modules/Common"]
-	path = Modules/Common
-	url = git@github.com:inacioferrarini/prova-concrete-movies-2019-common.git
-[submodule "Modules/Favorites"]
-	path = Modules/Favorites
-	url = git@github.com:inacioferrarini/prova-concrete-movies-2019-favorites.git
-[submodule "Modules/Ness"]
-	path = Modules/Ness
-	url = git@github.com:inacioferrarini/iOSNessFramework.git

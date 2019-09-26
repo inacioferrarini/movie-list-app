@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.setHapticsEnabled(true)
         SVProgressHUD.setDefaultStyle(.dark)
         SVProgressHUD.setMinimumDismissTimeInterval(2)
-        
+
         let tabBarController = UITabBarController()
 
         coordinator = MainCoordinator(tabBarController: tabBarController)

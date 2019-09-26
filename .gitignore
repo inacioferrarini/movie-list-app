@@ -42,6 +42,7 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 fastlane/slather_report
+fastlane/.env
 
 ### Xcode Patch ###
 *.xcodeproj/*

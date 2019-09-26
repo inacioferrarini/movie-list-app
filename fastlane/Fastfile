@@ -1,0 +1,60 @@
+fastlane_require 'dotenv'
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Generates documentation"
+  lane :generate_docs do
+    jazzy
+  end
+
+  desc "Run tests and generates test coverage report"
+  lane :generate_reports do
+    scan
+    xcov(
+      project: "Flow.xcodeproj",
+      scheme: "Flow",
+      output_directory: "coverage_report",
+      only_project_targets: "true"
+    )
+  end
+
+  desc "Prepares a release"
+  lane :prepare_release do
+    ensure_git_branch(
+      branch: 'develop'
+    )
+    ensure_git_status_clean
+    increment_build_number(
+      xcodeproj: "Flow.xcodeproj"
+    )
+    increment_version_number(
+      xcodeproj: "Flow.xcodeproj"
+    )
+    generate_docs
+    generate_reports
+    git_commit(
+      path: ".",
+      message: "Version Bump",
+      allow_nothing_to_commit: true
+    )
+    push_to_git_remote
+    create_pull_request(
+      repo: "inacioferrarini/iOSFlowFramework",
+      title: "New Version"
+    )
+  end
+
+  desc "Completes a release"
+  lane :release do
+    ensure_git_branch(
+      branch: 'master'
+    )
+    ensure_git_status_clean
+    add_git_tag(
+      prefix: "v"
+    )
+    push_git_tags
+  end
+
+end

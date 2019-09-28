@@ -16,14 +16,10 @@ end
 
 desc "Builds Carthage dependencies without updating, all submodules"
 task :cartbuildall do
-    sh "git submodule foreach carthage build --platform iOS --no-use-binaries"
+    sh "git submodule foreach rake cartbuild"
 end
 
 desc "Updates and builds Carthage dependencies, all submodules"
 task :cartupdateall do
-    sh "git submodule foreach carthage update --platform iOS --no-use-binaries"
+    sh "git submodule foreach rake cartupdate"
 end
-
-
-
-

@@ -11,6 +11,7 @@ end
 desc "Checks for git updates in all submodules' source code. Uses merge strategy."
 task :gitupdatemodules do
     sh "git submodule update --remote --merge"
+    sh "git submodule foreach git pull"
 end
 
 desc "Builds Carthage dependencies without updating, all submodules"

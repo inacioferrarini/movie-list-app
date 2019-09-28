@@ -21,8 +21,6 @@
 		BBF0A1E32323F48600552AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF0A1E12323F48600552AF2 /* Main.storyboard */; };
 		BBF0A1E62323F48600552AF2 /* MovieList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A1E42323F48600552AF2 /* MovieList.xcdatamodeld */; };
 		BBF0A1E82323F48600552AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF0A1E72323F48600552AF2 /* Assets.xcassets */; };
-		BBF0A1F62323F48600552AF2 /* MovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A1F52323F48600552AF2 /* MovieListTests.swift */; };
-		BBF0A2012323F48600552AF2 /* MovieListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A2002323F48600552AF2 /* MovieListUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,10 +197,8 @@
 		BBF0A1E72323F48600552AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBF0A1EC2323F48600552AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF0A1F12323F48600552AF2 /* MovieListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBF0A1F52323F48600552AF2 /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
 		BBF0A1F72323F48600552AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF0A1FC2323F48600552AF2 /* MovieListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBF0A2002323F48600552AF2 /* MovieListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListUITests.swift; sourceTree = "<group>"; };
 		BBF0A2022323F48600552AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF0A20F2323F57800552AF2 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
 		BBF0A2212323F58A00552AF2 /* Favorites.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Favorites.xcodeproj; path = Favorites/Favorites.xcodeproj; sourceTree = "<group>"; };
@@ -343,7 +339,6 @@
 		BBF0A1F42323F48600552AF2 /* MovieListTests */ = {
 			isa = PBXGroup;
 			children = (
-				BBF0A1F52323F48600552AF2 /* MovieListTests.swift */,
 				BBF0A1F72323F48600552AF2 /* Info.plist */,
 			);
 			path = MovieListTests;
@@ -352,7 +347,6 @@
 		BBF0A1FF2323F48600552AF2 /* MovieListUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BBF0A2002323F48600552AF2 /* MovieListUITests.swift */,
 				BBF0A2022323F48600552AF2 /* Info.plist */,
 			);
 			path = MovieListUITests;
@@ -664,7 +658,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF0A1F62323F48600552AF2 /* MovieListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +665,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF0A2012323F48600552AF2 /* MovieListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

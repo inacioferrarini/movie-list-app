@@ -26,17 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BBF0A1D92323F48600552AF2"
-            BuildableName = "MovieList.app"
-            BlueprintName = "MovieList"
-            ReferencedContainer = "container:MovieList.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      codeCoverageEnabled = "YES"
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -45,16 +36,6 @@
                BlueprintIdentifier = "BBF0A1F02323F48600552AF2"
                BuildableName = "MovieListTests.xctest"
                BlueprintName = "MovieListTests"
-               ReferencedContainer = "container:MovieList.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BBF0A1FB2323F48600552AF2"
-               BuildableName = "MovieListUITests.xctest"
-               BlueprintName = "MovieListUITests"
                ReferencedContainer = "container:MovieList.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -109,6 +90,17 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BBF0A1D92323F48600552AF2"
+            BuildableName = "MovieList.app"
+            BlueprintName = "MovieList"
+            ReferencedContainer = "container:MovieList.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -130,6 +122,8 @@
             ReferencedContainer = "container:MovieList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

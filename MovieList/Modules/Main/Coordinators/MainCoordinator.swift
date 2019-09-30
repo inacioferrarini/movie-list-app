@@ -37,7 +37,7 @@ class MainCoordinator: NSObject, Coordinator {
     lazy var modules: [Module] = {
         let modules: [Module] = [
             MovieCatalogModule(tabBar: tabBarController, appContext: appContext),
-            FavoritesModule(tabBar: tabBarController, appContext: appContext)
+            FavoriteMoviesModule(tabBar: tabBarController, appContext: appContext)
         ]
         return modules
     }()

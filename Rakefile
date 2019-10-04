@@ -12,14 +12,11 @@ desc "Checks for git updates in all submodules' source code. Uses merge strategy
 task :gitupdatemodules do
     sh "git submodule update --remote --merge"
     sh "git submodule foreach git pull"
+    sh "git pull"
 end
 
-desc "Builds Carthage dependencies without updating, all submodules"
-task :build do
-    sh "cd Modules/Flow; rake cartbuild; xcodebuild -project Flow.xcodeproj clean build | xcpretty; cd ..;"
-    sh "cd Modules/Ness; rake cartbuild; xcodebuild -project Ness.xcodeproj clean build | xcpretty; cd ..;"
-    sh "cd Modules/Common; rake cartbuild; xcodebuild -project Common.xcodeproj build | xcpretty; cd ..;"
-    sh "cd Modules/Favorites; rake cartbuild; xcodebuild -project Favorites.xcodeproj clean build | xcpretty; cd ..;"
-    sh "cd Modules/MovieCatalog; rake cartbuild; xcodebuild -project MovieCatalog.xcodeproj clean build | xcpretty; cd ..;"
-    sh "rake cartbuild; xcodebuild -project MovieListApp.xcodeproj clean build | xcpretty;"
+desc "Pushes changes in all submodules"
+task :gitpushall do
+    sh "git submodule push"
+    sh "git push"
 end

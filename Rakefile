@@ -17,6 +17,6 @@ end
 
 desc "Pushes changes in all submodules"
 task :gitpushall do
-    sh "git submodule push"
+    sh "git submodule foreach git push"
     sh "git push"
 end

@@ -49,7 +49,7 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>THEMOVIEDB_API_KEY</key>
+	<key>THE_MOVIE_DB_API_KEY</key>
 	<string>389b2710a34413b185b37464a7cc60ce</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>

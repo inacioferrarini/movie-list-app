@@ -47,7 +47,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
 
     public func start() {
-        if let apiKey = Bundle.main.object(forInfoDictionaryKey: "THEMOVIEDB_API_KEY") as? String {
+        if let apiKey = Bundle.main.object(forInfoDictionaryKey: "THE_MOVIE_DB_API_KEY") as? String {
             appContext.theMovieDbApiKey = apiKey
         }
         setupTabBar()

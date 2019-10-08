@@ -50,6 +50,8 @@ class MainCoordinator: NSObject, Coordinator {
         if let apiKey = Bundle.main.object(forInfoDictionaryKey: "THE_MOVIE_DB_API_KEY") as? String {
             appContext.theMovieDbApiKey = apiKey
         }
+        // try to load currently used language from user's preference
+        appContext.appLanguage = Language.englishUSA
         setupTabBar()
         setupNavigationBar()
         loadModules()

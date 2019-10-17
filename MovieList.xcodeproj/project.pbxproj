@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB210D822358109E005D6C27 /* Ness.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB699736233B039F00EBA6B3 /* Ness.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB210D832358109F005D6C27 /* Flow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB69973F233B03B200EBA6B3 /* Flow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB4A5B91232C371F00550391 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2152323F57800552AF2 /* Common.framework */; };
 		BB4A5B92232C371F00550391 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2152323F57800552AF2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB4A5B95232C371F00550391 /* MovieCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6191D923240EF8007E4C48 /* MovieCatalog.framework */; };
@@ -165,6 +167,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BB210D822358109E005D6C27 /* Ness.framework in Embed Frameworks */,
+				BB210D832358109F005D6C27 /* Flow.framework in Embed Frameworks */,
 				BB4A5B92232C371F00550391 /* Common.framework in Embed Frameworks */,
 				BB4A5B9A232C371F00550391 /* Favorites.framework in Embed Frameworks */,
 				BB51F513233979140054EB57 /* SVProgressHUD.framework in Embed Frameworks */,

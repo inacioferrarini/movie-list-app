@@ -16,8 +16,6 @@
 		BB4A5B99232C371F00550391 /* Favorites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; };
 		BB4A5B9A232C371F00550391 /* Favorites.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0A2272323F58A00552AF2 /* Favorites.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB4A5B9F232C3D6500550391 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4A5B9E232C3D6500550391 /* Launch Screen.storyboard */; };
-		BB51F512233979140054EB57 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB51F50E233979140054EB57 /* SVProgressHUD.framework */; };
-		BB51F513233979140054EB57 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB51F50E233979140054EB57 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB6191AA23240908007E4C48 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6191A923240908007E4C48 /* MainCoordinator.swift */; };
 		BBF0A1DE2323F48600552AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0A1DD2323F48600552AF2 /* AppDelegate.swift */; };
 		BBF0A1E32323F48600552AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF0A1E12323F48600552AF2 /* Main.storyboard */; };
@@ -45,6 +43,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BBF0A1B52323F0BC00552AF2;
 			remoteInfo = Favorites;
+		};
+		BB4F319E236FFB73001DAB1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB6191D323240EF8007E4C48 /* MovieCatalog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB979FE6236B91D7005D699D;
+			remoteInfo = MovieCatalogFunctionalTests;
 		};
 		BB6191D823240EF8007E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -171,7 +176,6 @@
 				BB210D832358109F005D6C27 /* Flow.framework in Embed Frameworks */,
 				BB4A5B92232C371F00550391 /* Common.framework in Embed Frameworks */,
 				BB4A5B9A232C371F00550391 /* Favorites.framework in Embed Frameworks */,
-				BB51F513233979140054EB57 /* SVProgressHUD.framework in Embed Frameworks */,
 				BB4A5B96232C371F00550391 /* MovieCatalog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -204,7 +208,6 @@
 			files = (
 				BB4A5B91232C371F00550391 /* Common.framework in Frameworks */,
 				BB4A5B95232C371F00550391 /* MovieCatalog.framework in Frameworks */,
-				BB51F512233979140054EB57 /* SVProgressHUD.framework in Frameworks */,
 				BB4A5B99232C371F00550391 /* Favorites.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +270,7 @@
 			children = (
 				BB6191D923240EF8007E4C48 /* MovieCatalog.framework */,
 				BB6191DB23240EF8007E4C48 /* MovieCatalogTests.xctest */,
+				BB4F319F236FFB73001DAB1F /* MovieCatalogFunctionalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -475,6 +479,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BB4F319F236FFB73001DAB1F /* MovieCatalogFunctionalTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MovieCatalogFunctionalTests.xctest;
+			remoteRef = BB4F319E236FFB73001DAB1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BB6191D923240EF8007E4C48 /* MovieCatalog.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;

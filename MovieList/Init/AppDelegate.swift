@@ -23,7 +23,6 @@
 
 import UIKit
 import CoreData
-import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,10 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        SVProgressHUD.setHapticsEnabled(true)
-        SVProgressHUD.setDefaultStyle(.dark)
-        SVProgressHUD.setMinimumDismissTimeInterval(2)
 
         let tabBarController = UITabBarController()
 

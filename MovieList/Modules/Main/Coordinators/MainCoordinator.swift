@@ -51,7 +51,6 @@ class MainCoordinator: NSObject, Coordinator {
         }
         // try to load currently used language from user's preference
         appContext.appLanguage = Language.englishUSA
-        appContext.appTheme = DefaultAppTheme()
         setupTabBar()
         setupNavigationBar()
         loadModules()
@@ -70,20 +69,20 @@ class MainCoordinator: NSObject, Coordinator {
     }
 
     internal func setupTabBar() {
-        UITabBar.appearance().barTintColor = appContext.appTheme?.tabBar.backgroundColor
+        UITabBar.appearance().barTintColor = Assets.Colors.TabBar.backgroundColor
 
-        if let unselectedTextColor = appContext.appTheme?.tabBar.unselectedTextColor {
+        if let unselectedTextColor = Assets.Colors.TabBar.unselectedTextColor {
             UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: unselectedTextColor], for: .normal)
         }
-        if let selectedTextColor = appContext.appTheme?.tabBar.selectedTextColor {
+        if let selectedTextColor = Assets.Colors.TabBar.selectedTextColor {
             UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: selectedTextColor], for: .selected)
         }
     }
 
     internal func setupNavigationBar() {
-        UINavigationBar.appearance().barTintColor = appContext.appTheme?.navBar.iconColor
-        UINavigationBar.appearance().tintColor = appContext.appTheme?.navBar.iconColor
-        if let titleColor = appContext.appTheme?.navBar.titleColor {
+        UINavigationBar.appearance().barTintColor = Assets.Colors.NavigationBar.backgroundColor
+        UINavigationBar.appearance().tintColor = Assets.Colors.NavigationBar.iconColor
+        if let titleColor = Assets.Colors.NavigationBar.titleColor {
             UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: titleColor]
         }
     }

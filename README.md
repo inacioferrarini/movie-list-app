@@ -1,3 +1,49 @@
+# About
+
+This project is a concept proof for a Modular App, sharing data among the modules, without using Singletons.
+
+# App Structure and Architecture
+
+App structure is divided in four parts, each one being considered a module itself:
+
+- [The App itself - You are here] (https://github.com/inacioferrarini/movie-list-app)
+- [common module] (https://github.com/inacioferrarini/movie-list-common)
+- [Movie Catalog] (https://github.com/inacioferrarini/movie-list-moviecatalog)
+- [Favorites] (https://github.com/inacioferrarini/movie-list-favorites)
+
+The App uses coordinator for navigation.
+
+![](Coordinator Architecture Overview.png)
+
+A **View** is responsible for the presentation and visual composition. One or more views can be used to compose a more complex **view**, and insolated in components for easier reuse.
+
+A **ViewController** controlls the **view**'s lifecycle, fetches data, do auxiliary work required by the view to be displayed properly. If the **ViewController** becomes too complex, it may be divided into smaller objects.
+
+A **Coordinator** is responsible to define the next (or previous) **ViewController** to be displayed, as well as provide data for the **ViewController**.
+
+Auxiliary objects are used when needed. **DataSources** and **Delegates** are used as external objects for **TableViews** and **Delegates**.
+
+
+# Inspiration
+
+This project is inspired by Concrete iOS Challenge - See Bellow.
+
+# Requirements
+
+This project was develop using **Xcode 10.1** and **Carthage** for dependency management.
+
+This project uses two frameworks I've developed: 
+
+- [Ness](https://github.com/inacioferrarini/iOSNessFramework) - Essential classes and boilerplate classes
+- [Flow](https://github.com/inacioferrarini/iOSFlowFramework) - Coordinator foundation
+
+# Getting the Code
+
+```bash
+git clone git@github.com:inacioferrarini/movie-list-app.git --recursive
+rake cartupdateall
+```
+
 # Concrete iOS Recruit Challenge
 
 ---

@@ -3,13 +3,13 @@
 	url = git@github.com:inacioferrarini/iOSNessFramework.git
 [submodule "Modules/MovieCatalog"]
 	path = Modules/MovieCatalog
-	url = git@github.com:inacioferrarini/prova-concrete-movies-2019-moviecatalog.git
+	url = git@github.com:inacioferrarini/movie-list-moviecatalog.git
 [submodule "Modules/Favorites"]
 	path = Modules/Favorites
-	url = git@github.com:inacioferrarini/prova-concrete-movies-2019-favorites.git
+	url = git@github.com:inacioferrarini/movie-list-favorites.git
 [submodule "Modules/Common"]
 	path = Modules/Common
-	url = git@github.com:inacioferrarini/prova-concrete-movies-2019-common.git
+	url = git@github.com:inacioferrarini/movie-list-common.git
 [submodule "Modules/Flow"]
 	path = Modules/Flow
 	url = git@github.com:inacioferrarini/iOSFlowFramework.git

@@ -13,7 +13,7 @@ App structure is divided in four parts, each one being considered a module itsel
 
 The App uses coordinator for navigation.
 
-![Png](coordinator-architecture overview.png)
+![Png](coordinator-architecture-overview.png)
 
 A **View** is responsible for the presentation and visual composition. One or more views can be used to compose a more complex **view**, and insolated in components for easier reuse.
 
